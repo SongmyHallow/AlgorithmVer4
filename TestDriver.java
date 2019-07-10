@@ -6,7 +6,7 @@ public class TestDriver{
         int key = 3;
         BinarySearch sol = new BinarySearch();
         System.out.println(sol.rank(key, arr));
-        int[] whitelist = In.readInts("tinyW.txt");
+        int[] whitelist = In.readInts(args[1]);
         System.out.println(Arrays.toString(whitelist));
     }
 }
