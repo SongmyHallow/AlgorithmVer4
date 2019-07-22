@@ -1,4 +1,4 @@
-public class Date{
+public class Date implements Comparable<Date>{
 
     private static final int[] limit = { 0, 31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
 
@@ -27,6 +27,16 @@ public class Date{
         if(m < 1 || m > 12) return false;
         if(d <1 || d > limit[m])    return false;
         return true;
+    }
+
+    public int compareTo(Date that){
+        if(this.year > that.year)   return +1;
+        if(this.year < that.year)   return -1;
+        if(this.month > that.month)   return +1;
+        if(this.month > that.month)   return +1;
+        if(this.day > that.day)   return +1;
+        if(this.day > that.day)   return +1;
+        return 0;
     }
 
     public static void main(String[] args) {

@@ -10,7 +10,7 @@ public class FixedCapacityStack<Item>{
         return N==0;
     }
     public boolean isFull(){
-        return N==cap;
+        return N==a.length;
     }
     public int size(){
         return N;
